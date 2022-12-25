@@ -23,20 +23,19 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
     implementation 'org.jetbrains.kotlin:kotlin-reflect'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
 
+    implementation 'com.google.apis:google-api-services-people:v1-rev20220531-2.0.0'
+
+    implementation 'net.sf.biweekly:biweekly:0.6.6'
+
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
-    runtimeOnly 'com.h2database:h2'
-
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.withType(KotlinCompile) {

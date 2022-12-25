@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Download Calendar - Contacts Calendar</title>
+    <meta name="description" content="Download your calendar of birthdays.">
+</head>
+<body>
+<div id="content">
+    <a href="/"><h1>Contacts Calendar</h1></a>
+
+    <a href="data:text/calendar;base64,{{ calendarContents }}" download="Contacts Calendar ({{ today }}).ics">
+        <button>Download calendar</button>
+    </a>
+</div>
+</body>
+</html>
