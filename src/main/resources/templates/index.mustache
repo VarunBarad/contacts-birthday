@@ -7,6 +7,9 @@
     <title>Contacts Calendar</title>
     <meta name="description" content="A tool to get birthdays of your Google contacts in a calendar file.">
 
+    <!-- Stylesheet -->
+    <link href="/styles.css" rel="stylesheet" type="text/css">
+
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon/favicon-32.png" sizes="32x32">
     <link rel="icon" href="/assets/favicon/favicon-128.png" sizes="128x128">
@@ -15,16 +18,40 @@
 </head>
 <body>
 <div id="content">
-    <h1>Contacts Calendar</h1>
+    <a href="/"><h1>Contacts Calendar</h1></a>
+
+    <p>
+        Contacts Calendar gives you a calendar feed made of the important dates (birthdays, anniversaries, etc.) saved in your Google Contacts.
+    </p>
+    <p>
+        You can then plug that feed into your calendar software of choice even if it does not support login with your Google account.
+    </p>
+    <p>
+        Once you click on the "Authenticate with Google" button, you will be redirected to log in to your Google account and provide us permission to read your contacts, we need this permission to read the important dates attached to your Google contacts.
+    </p>
+    <p>
+        After you finish login, we compile and provide you with a iCal file which you can plug into any calendar application of your choice.
+    </p>
+    <p>
+        Once that file is created, we forget everything related to that Google account. We don't store any of your details on our servers, we don't even store that generated calendar feed on our server.
+    </p>
+
     <a href="{{ GOOGLE_AUTH_URL }}"><button>Authenticate with Google</button></a>
+
+    <p>
+        Last but not the least, I have created this side-project to learn how to work with Spring Boot so please feel free to reach out to me via GitHub or my website about any issues you face when using Contacts Calendar.
+    </p>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/VarunBarad/contacts-calendar/">⌨️ Source Code</a></li>
+                <li><a href="/privacy.html">🔍 Privacy Policy</a></li>
+                <li><a href="/terms-of-service.html">📜 Terms of Service</a></li>
+            </ul>
+        </nav>
+        <a href="https://varunbarad.com"><p>Made with ⌨️ by Varun</p></a>
+    </footer>
 </div>
-<footer>
-    <nav>
-        <ul>
-            <li><a href="/privacy.html">Privacy Policy</a></li>
-            <li><a href="/terms-of-service.html">Terms of Service</a></li>
-        </ul>
-    </nav>
-</footer>
 </body>
 </html>
