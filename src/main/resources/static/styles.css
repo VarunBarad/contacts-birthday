@@ -93,6 +93,13 @@ footer > a > p {
     text-align: center;
 }
 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
 @media (max-width: 900px) {
     label, button, footer, p, hr, ul {
         width: 100%;
